@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" /> 
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <!--  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />  -->
+
+
+    <!--link rel="stylesheet" type="text/css" href="css/index.css" /-->
+    <!--link rel="stylesheet" type="text/css" href="css/framework7.css"-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/framework7-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/framework7.bundle.css">
+    <!--link rel="stylesheet" type="text/css" href="css/framework7.bundle.min.css"-->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <title>COSMOS-FO</title>
+</head>
+
+<body>
+<div id="app">
+  <div class="statusbar"></div>
+  <div class="view view-main" data-url="/">
+    <div class="page no-navbar no-swipeback " data-name="index">
+      <div class="toolbar toolbar-fixed toolbar-bottom">            
+        <div class="row no-gap">
+          <div class="col"><a href="#" onclick="checklogin();" class="col button button-large button-raised button-fill login-btn grey-text no-radius" >LOG IN</a></div>
+          <!--div class="col"><a href="#" onclick="checklogin();" class="col button button-large button-raised button-fill login-btn grey-text no-radius" >SIGN IN</a></div-->
+        </div>    
+      </div>
+
+      <div class="page-content login-screen-content form-div-login">
+        <div class="login-screen-title text-white">C<i class="fa fa-globe nobox"></i>SM<i class="fa fa-globe nobox"></i>S - F<i class="fa fa-globe nobox"></i></div>
+        <form id="loginForm" class="loginForm">            
+          <div class="list ">              
+            <ul>                
+              <li class="item-content item-input mb-15">                  
+                <div class="item-inner">                    
+                  <!--div class="item-title item-label">Username</div--> 
+                  <i class="fa fa-user"></i>                   
+                  <div class="item-input-wrap">
+                    <div class="inputbox">                        
+                      <input type="text" name="username" id="username" placeholder="Username" class="" required validate>  
+                      <!--span class="input-clear-button"></span--> 
+                    </div>                 
+                  </div>                  
+                </div>                
+              </li>   
+
+
+              <li class="item-content item-input mb-15">                  
+                <div class="item-inner">                    
+                  <!--div class="item-title item-label">Password</div-->
+                  <i class="fa fa-lock"></i>                    
+                  <div class="item-input item-input-wrap">  
+                    <div class="inputbox">                    
+                      <input type="password" name="password" id="password" placeholder="Password" required validate>
+                      <!--span class="input-clear-button"></span-->
+                    </div>                    
+                  </div>                  
+                </div>                
+              </li> 
+
+            </ul>            
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<!--script type="text/javascript" src="js/framework7.js"></script-->
+<script type="text/javascript" src="js/framework7.bundle.min.js"></script>
+<script type="text/javascript" src="js/routes.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<!--script type="text/javascript" src="js/index.js"></script-->
+<script type="text/javascript">
+    if (Framework7.prototype.device.android) { 
+        //alert("android");
+        Dom7('head').append(                  
+            '<link rel="stylesheet" href="css/app-material.css">' 
+        );
+    }else{
+        //alert("ios");
+        Dom7('head').append(
+            '<link rel="stylesheet" href="css/app-ios.css">'
+        );
+    }
+</script> 
+</body>
+</html>

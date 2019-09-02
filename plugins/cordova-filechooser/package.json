@@ -1,0 +1,57 @@
+{
+  "_from": "cordova-filechooser@^1.0.3",
+  "_id": "cordova-filechooser@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-2bg/BF6eJDuSDynn6fj+e6kgX442A+LhDCT0hB/Rjeuvf5H+Mbb6tAwoJBeM+7LIjNqvF1tLOJCUi8GHCUQoZw==",
+  "_location": "/cordova-filechooser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-filechooser@^1.0.3",
+    "name": "cordova-filechooser",
+    "escapedName": "cordova-filechooser",
+    "rawSpec": "^1.0.3",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-filechooser/-/cordova-filechooser-1.0.3.tgz",
+  "_shasum": "0a92f626ea6bc569eb980c0b4db3f12ce68f0c11",
+  "_spec": "cordova-filechooser@^1.0.3",
+  "_where": "C:\\xampp\\htdocs\\cosmosfo",
+  "author": {
+    "name": "Geroen Joris"
+  },
+  "bugs": {
+    "url": "https://github.com/gjoris/cordova-filechooser/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-filechooser",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Plugin that supplies a File Chooser",
+  "engines": {
+    "name": "cordova",
+    "version": ">=2.8.0"
+  },
+  "homepage": "https://github.com/gjoris/cordova-filechooser#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-filechooser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gjoris/cordova-filechooser.git"
+  },
+  "version": "1.0.3"
+}

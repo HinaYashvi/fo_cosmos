@@ -1,0 +1,610 @@
+<div data-name="add_feedback" class="page navbar-fixed toolbar-fixed">
+	<div class="navbar inner-header nav-bg">
+	  <div class="navbar-inner sliding">
+	    <div class="left ">
+        <!--a href="#" class="link panel-open" data-panel="left" onclick="openPanel()"><i class="f7-icons size-22 leftbars text-white" >bars</i></a-->
+        <a href="#" class="link back"><i class="f7-icons size-22 text-white">arrow_left</i></a>
+	    </div>
+	    <div class="title text-uppercase text-white">Add Feedback</div>
+	    <div class="right">
+        <!--a class="link" href="#" >
+          <i class="f7-icons size-22 text-white leftbars" >more_vertical_fill</i>
+        </a-->
+        <a href="#" class="link panel-open" data-panel="left" onclick="openPanel()"><i class="f7-icons size-22 leftbars text-white" >bars</i></a>
+      </div>
+	  </div>
+	</div> 
+
+  <div class="toolbar toolbar-bottom toolbar-fixed footer-bg">
+    <div class="toolbar-inner">
+      <a class="link"></a>
+      <div class="link text-white text-capitalize ">powered by &nbsp; <span class="fa fa-star gly-spin "></span><a class="link external link-white text-uppercase linkspace poweredby" href="http://staroneweb.co.in" target="_system"> star one web</a></div>
+      <a class="link"></a> 
+    </div>
+  </div>
+
+  <div class="page-content">
+    <form class="list no-hairlines add_comp" id="add_comp" >
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Name Of Company - कंपनी का नाम<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>              
+              <div class="item-input-wrap">
+                <input type="text" name="name" id="name" placeholder="Name Of Company" class="form-txtbox p-2" required validate data-error-message="Name of company should not be empty.">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Site Address - साइट का पता</div>
+              <div class="item-input-wrap">
+                <textarea name="site_address" id="site_address" class="form-txtbox p-2"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Contact Person - संपर्क व्यक्ति</div>              
+              <div class="item-input-wrap">
+                <input type="text" name="cont_person" id="cont_person" placeholder="Contact Person" class="form-txtbox p-2" required validate data-error-message="Contact person name should not be empty.">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Designation - ओहदा</div>              
+              <div class="item-input-wrap">
+                <input type="text" name="designation" id="designation" placeholder="Designation" class="form-txtbox p-2" required validate data-error-message="Contact person name should not be empty.">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="font-10 ml-5 redtxt">Please Note : We seek your feedback for improving our services.Please fill free and give us your fair opinion.We will definitly try to deliver the best services.</div>
+
+      <div class="block">
+        <div class="list accordion-list">
+          <ul>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15">
+              <a href="#" class="item-content font-12 mh-30">
+                <div class="item-inner mh-30">
+                  <div class="item-title orange-txt fw-600 font-11">Service Quality (सेवा की गुणवत्ता)</div>
+                </div>  
+              </a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row p-2">            
+                      <div class="col-25"> 
+                        <label class="radio"><input type="radio" name="service" value="1"><i class="icon-radio wh-16"></i></label> <span class="font-9">Excellent</span>
+                      </div>
+                      <div class="col-20">
+                        <label class="radio"><input type="radio" name="service" value="2"><i class="icon-radio wh-16"></i></label> <span class="font-9">Good</span>
+                      </div>
+                    
+                      <div class="col-30">
+                        <label class="radio"><input type="radio" name="service" value="3"><i class="icon-radio wh-16"></i></label> <span class="font-9">Satisfactory</span>
+                      </div>
+                      <div class="col-25">
+                        <label class="radio"><input type="radio" name="service" value="4"><i class="icon-radio wh-16"></i></label> <span class="font-9">Average</span>
+                      </div>                                      
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15">
+              <a href="#" class="item-content font-12 mh-30">
+                <div class="item-inner mh-30">
+                  <div class="item-title orange-txt fw-600 font-11">Response Time (जवाब देने का समय)</div>
+                </div>  
+              </a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row p-2">            
+                      <div class="col-25"> 
+                        <label class="radio"><input type="radio" name="response" value="1"><i class="icon-radio wh-16"></i></label> <span class="font-9">Excellent</span>
+                      </div>
+                      <div class="col-20">
+                        <label class="radio"><input type="radio" name="response" value="2"><i class="icon-radio wh-16"></i></label> <span class="font-9">Good</span>
+                      </div> 
+                    
+                      <div class="col-30">
+                        <label class="radio"><input type="radio" name="response" value="3"><i class="icon-radio wh-16"></i></label> <span class="font-9">Satisfactory</span>
+                      </div>
+                      <div class="col-25">
+                        <label class="radio"><input type="radio" name="response" value="4"><i class="icon-radio wh-16"></i></label> <span class="font-9">Average</span>
+                      </div>                                      
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15">
+              <a href="#" class="item-content font-12 mh-30">
+                <div class="item-inner mh-30">
+                  <div class="item-title orange-txt fw-600 font-11">Behaviour of person Deputed (व्यक्ति का व्यवहार निर्भर)</div>
+                </div>  
+              </a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row p-2">            
+                      <div class="col-25"> 
+                        <label class="radio"><input type="radio" name="person_behave" value="1"><i class="icon-radio wh-16"></i></label> <span class="font-9">Excellent</span>
+                      </div>
+                      <div class="col-20">
+                        <label class="radio"><input type="radio" name="person_behave" value="2"><i class="icon-radio wh-16"></i></label> <span class="font-9">Good</span>
+                      </div> 
+                     
+                      <div class="col-30">
+                        <label class="radio"><input type="radio" name="person_behave" value="3"><i class="icon-radio wh-16"></i></label> <span class="font-9">Satisfactory</span>
+                      </div>
+                      <div class="col-25">
+                        <label class="radio"><input type="radio" name="person_behave" value="4"><i class="icon-radio wh-16"></i></label> <span class="font-9">Average</span>
+                      </div>                                      
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15">
+              <a href="#" class="item-content font-12 mh-30">
+                <div class="item-inner mh-30">
+                  <div class="item-title orange-txt fw-600 font-11">Complaint Handling (शिकायत देखभाल)</div>
+                </div>  
+              </a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row p-2">            
+                      <div class="col-25"> 
+                        <label class="radio"><input type="radio" name="comp_handle" value="1"><i class="icon-radio wh-16"></i></label> <span class="font-9">Excellent</span>
+                      </div>
+                      <div class="col-20">
+                        <label class="radio"><input type="radio" name="comp_handle" value="2"><i class="icon-radio wh-16"></i></label> <span class="font-9">Good</span>
+                      </div> 
+                     
+                      <div class="col-30">
+                        <label class="radio"><input type="radio" name="comp_handle" value="3"><i class="icon-radio wh-16"></i></label> <span class="font-9">Satisfactory</span>
+                      </div>
+                      <div class="col-25">
+                        <label class="radio"><input type="radio" name="comp_handle" value="4"><i class="icon-radio wh-16"></i></label> <span class="font-9">Average</span>
+                      </div>                                      
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15">
+              <a href="#" class="item-content font-12 mh-30">
+                <div class="item-inner mh-30">
+                  <div class="item-title orange-txt fw-600 font-11">Price (क़ीमत)</div>
+                </div>  
+              </a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row p-2">            
+                      <div class="col-25"> 
+                        <label class="radio"><input type="radio" name="price" value="1"><i class="icon-radio wh-16"></i></label> <span class="font-9">Excellent</span>
+                      </div>
+                      <div class="col-20">
+                        <label class="radio"><input type="radio" name="price" value="2"><i class="icon-radio wh-16"></i></label> <span class="font-9">Good</span>
+                      </div> 
+                     
+                      <div class="col-30">
+                        <label class="radio"><input type="radio" name="price" value="3"><i class="icon-radio wh-16"></i></label> <span class="font-9">Satisfactory</span>
+                      </div>
+                      <div class="col-25">
+                        <label class="radio"><input type="radio" name="price" value="4"><i class="icon-radio wh-16"></i></label> <span class="font-9">Average</span>
+                      </div>                                      
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15">
+              <a href="#" class="item-content font-12 mh-30">
+                <div class="item-inner mh-30">
+                  <div class="item-title orange-txt fw-600 font-11">Documentation (प्रलेखन)</div>
+                </div>  
+              </a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row p-2">            
+                      <div class="col-25"> 
+                        <label class="radio"><input type="radio" name="document" value="1"><i class="icon-radio wh-16"></i></label> <span class="font-9">Excellent</span>
+                      </div>
+                      <div class="col-20">
+                        <label class="radio"><input type="radio" name="document" value="2"><i class="icon-radio wh-16"></i></label> <span class="font-9">Good</span>
+                      </div> 
+                     
+                      <div class="col-30">
+                        <label class="radio"><input type="radio" name="document" value="3"><i class="icon-radio wh-16"></i></label> <span class="font-9">Satisfactory</span>
+                      </div>
+                      <div class="col-25">
+                        <label class="radio"><input type="radio" name="document" value="4"><i class="icon-radio wh-16"></i></label> <span class="font-9">Average</span>
+                      </div>                                      
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15">
+              <a href="#" class="item-content font-12 mh-30">
+                <div class="item-inner mh-30">
+                  <div class="item-title orange-txt fw-600 font-11">Overall Performance (सम्पूर्ण प्रदर्शन)</div>
+                </div>  
+              </a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row p-2">            
+                      <div class="col-25"> 
+                        <label class="radio"><input type="radio" name="performance" value="1"><i class="icon-radio wh-16"></i></label> <span class="font-9">Excellent</span>
+                      </div>
+                      <div class="col-20">
+                        <label class="radio"><input type="radio" name="performance" value="2"><i class="icon-radio wh-16"></i></label> <span class="font-9">Good</span>
+                      </div> 
+                     
+                      <div class="col-30">
+                        <label class="radio"><input type="radio" name="performance" value="3"><i class="icon-radio wh-16"></i></label> <span class="font-9">Satisfactory</span>
+                      </div>
+                      <div class="col-25">
+                        <label class="radio"><input type="radio" name="performance" value="4"><i class="icon-radio wh-16"></i></label> <span class="font-9">Average</span>
+                      </div>                                      
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!--li class="accordion-item light-orange accordion-item-opened mb-15"><a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title orange-txt fw-600">Service Quality (सेवा की गुणवत्ता)</div>
+                </div></a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row mt-10">                  
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="service" value="1"><i class="icon-radio"></i></label> Excellent
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="service" value="2"><i class="icon-radio"></i></label> Good
+                      </div>
+                    </p>                  
+                  </div>
+
+                  <div class="row mt-10">                  
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="service" value="3"><i class="icon-radio"></i></label> Satisfactory
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="service" value="4"><i class="icon-radio"></i></label> Average
+                      </div>
+                    </p>                  
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15"><a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title orange-txt fw-600">Response Time (जवाब देने का समय)</div>
+                </div></a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="response" value="1"><i class="icon-radio"></i></label> Excellent
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="response" value="2"><i class="icon-radio"></i></label> Good
+                      </div>
+                    </p>
+                  </div>
+
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="response" value="3"><i class="icon-radio"></i></label> Satisfactory
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="response" value="4"><i class="icon-radio"></i></label> Average
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15"><a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title orange-txt fw-600">Behaviour of person Deputed (व्यक्ति का व्यवहार निर्भर)</div>
+                </div></a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="person_behave" value="1"><i class="icon-radio"></i></label> Excellent
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="person_behave" value="2"><i class="icon-radio"></i></label> Good
+                      </div>
+                    </p>
+                  </div>
+
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="person_behave" value="3"><i class="icon-radio"></i></label> Satisfactory
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="person_behave" value="4"><i class="icon-radio"></i></label> Average
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15"><a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title orange-txt fw-600">Complaint Handling (शिकायत देखभाल)</div>
+                </div></a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="comp_handle" value="1"><i class="icon-radio"></i></label> Excellent
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="comp_handle" value="2"><i class="icon-radio"></i></label> Good
+                      </div>
+                    </p>
+                  </div>
+
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="comp_handle" value="3"><i class="icon-radio"></i></label> Satisfactory
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="comp_handle" value="4"><i class="icon-radio"></i></label> Average
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15"><a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title orange-txt fw-600">Price (क़ीमत)</div>
+                </div></a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="price" value="1"><i class="icon-radio"></i></label> Excellent
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="price" value="2"><i class="icon-radio"></i></label> Good
+                      </div>
+                    </p>
+                  </div>
+
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="price" value="3"><i class="icon-radio"></i></label> Satisfactory
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="price" value="4"><i class="icon-radio"></i></label> Average
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15"><a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title orange-txt fw-600">Documentation (प्रलेखन)</div>
+                </div></a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="document" value="1"><i class="icon-radio"></i></label> Excellent
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="document" value="2"><i class="icon-radio"></i></label> Good
+                      </div>
+                    </p>
+                  </div>
+
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="document" value="3"><i class="icon-radio"></i></label> Satisfactory
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="document" value="4"><i class="icon-radio"></i></label> Average
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item light-orange accordion-item-opened mb-15"><a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title orange-txt fw-600">Overall Performance (सम्पूर्ण प्रदर्शन)</div>
+                </div></a>
+              <div class="accordion-item-content nobgclr elevation-1">
+                <div class="block">
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="performance" value="1"><i class="icon-radio"></i></label> Excellent
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="performance" value="2"><i class="icon-radio"></i></label> Good
+                      </div>
+                    </p>
+                  </div>
+
+                  <div class="row mt-10">
+                    <p>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="performance" value="3"><i class="icon-radio"></i></label> Satisfactory
+                      </div>
+                      <div class="col-50">
+                        <label class="radio"><input type="radio" name="performance" value="4"><i class="icon-radio"></i></label> Average
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li-->
+          </ul>
+
+          
+
+        </div>
+
+
+      </div>
+
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Any other suggetions for improvment - सुधार के लिए कोई अन्य सुझाव</div>              
+              <div class="item-input-wrap">
+                <textarea name="any_suggestions" id="any_suggestions" class="form-txtbox p-2"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!--li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Feedback Form Copy - फीडबैक फॉर्म कॉपी<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>            
+              <div class="item-input-wrap">
+               
+                <button class="col button button-small button-outline color-orange mt-5" type="button" onclick="showIcons()">Attachment</button>
+              </div>
+            </div>
+          </div>
+        </li-->
+
+        <!--li class="item-content item-input showtwoBlocks display-none ">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="uploadDiv w-100 display-none">
+                <div class="col-100">
+                  <div class="row">
+                    <div class="col-50 picbox text-white" >
+                      <span onclick="capturePhoto();" >
+                        <div class="innerDiv">
+                          
+                          <img src="img/icons/photo-camera-1.png" height="50" width="50" /><br/>
+                          <span class="picbox-text">Capture</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-50 picbox text-white" >
+                      <a onclick="getPhoto(pictureSource.PHOTOLIBRARY);">
+                        <div class="innerDiv">
+                          
+                          <img src="img/icons/gallery.png" height="50" width="50" /><br/>
+                          <span class="picbox-text">Photo Gallery</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>      
+        </li-->
+        <li class="item-content item-input showtwoBlocks display-none">
+                <div class="item-inner">
+                  <span class="item-title item-label form-label mb-15">Feedback Form Copy - फीडबैक फॉर्म कॉपी<sup class="redtxt fw-600 ml-1 font-12">*</sup></span>
+                  <div class="item-input-wrap">
+                    <div class="uploadDiv w-100 display-none">
+                      <div class="col-100">
+                        <div class="row">
+                          <div class="20"></div>
+                          <div class="col-25 picbox text-white" >
+                            <span onclick="capturePhoto();" >
+                              <div class="innerDiv">
+                                <!--i class="f7-icons picbox-text">camera</i><br/-->
+                                <img src="img/icons/photo-camera-1.png" height="30" width="30" /><br/>
+                                <span class="picbox-text">Capture</span>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-25 picbox text-white" >
+                          <a onclick="getPhoto(pictureSource.PHOTOLIBRARY);">
+                            <div class="innerDiv">
+                              <!--i class="f7-icons picbox-text">photos</i><br/-->
+                              <img src="img/icons/gallery.png" height="30" width="30" /><br/>
+                              <span class="picbox-text">Photo Gallery</span>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="col-25 picbox text-white" >
+                          <!--a onclick="openFileExplorer();"-->
+                          <a id="openFileMgr" onclick="openFM();">
+                            <div class="innerDiv">
+                              <!--i class="f7-icons picbox-text">photos</i><br/-->
+                              <img src="img/icons/folder.png" height="30" width="30" /><br/>
+                              <span class="picbox-text">Browse File</span>
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="20"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>            
+
+            <li class="item-content item-input imageblock display-none" style="width:100%;" id="imageblock">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <img id="image" src="" style="width:100%;">
+                </div>
+              </div>
+            </li>
+     
+            <!--ul id="select-demo"></ul-->
+      </ul>
+
+      <div class="block block-strong row">
+        <div class="col"><a class="button convert-form-to-data no-radius link-white form-btn compsave_btn disabled" href="#" onclick="add_feedback()">Save</a></div>      
+      </div>
+    </form>
+  </div>
+</div>

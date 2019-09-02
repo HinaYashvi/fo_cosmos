@@ -1,0 +1,82 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    },
+    "cordova-plugin-notification": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    },
+    "cordova-plugin-filechooser": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    },
+    "com.ourcodeworld.plugins.Filebrowser": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    },
+    "cordova-filechooser": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    },
+    "cordova-plugin-file-opener2": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-app-event": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    },
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    },
+    "de.appplant.cordova.plugin.local-notification": {
+      "PACKAGE_NAME": "com.phonegap.cosmosfo"
+    }
+  }
+}

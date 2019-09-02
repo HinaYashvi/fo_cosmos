@@ -1,0 +1,282 @@
+<div data-name="provisional_registration" class="page navbar-fixed toolbar-fixed">
+	<div class="navbar inner-header nav-bg">
+	  <div class="navbar-inner sliding">
+	    <div class="left ">
+        <!--a href="#" class="link panel-open" data-panel="left" onclick="openPanel()"><i class="f7-icons size-22 leftbars text-white" >bars</i></a-->
+        <a href="#" class="link back"><i class="f7-icons size-22 text-white">arrow_left</i></a>
+	    </div>
+	    <div class="title text-uppercase text-white">Provisional Registration</div>
+	    <div class="right">
+        <!--a class="link" href="#" >
+          <i class="f7-icons size-22 text-white leftbars" >more_vertical_fill</i>
+        </a-->
+        <a href="#" class="link panel-open" data-panel="left" onclick="openPanel()"><i class="f7-icons size-22 leftbars text-white" >bars</i></a>
+      </div>
+	  </div>
+	</div> 
+
+  <div class="toolbar toolbar-bottom toolbar-fixed footer-bg">
+    <div class="toolbar-inner">
+      <a class="link"></a>
+      <div class="link text-white text-capitalize ">powered by &nbsp; <span class="fa fa-star gly-spin "></span><a class="link external link-white text-uppercase linkspace poweredby" href="http://staroneweb.co.in" target="_system"> star one web</a></div>
+      <a class="link"></a> 
+    </div>
+  </div>
+
+  <div class="page-content">
+    <form class="list no-hairlines register_me" id="my-form" >
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Name<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>
+              <div class="item-input-wrap">
+                <input type="text" name="name" placeholder="Name" class="form-txtbox p-2" required validate data-error-message="Name should not be empty.">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">State<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>
+              <div class="item-input-wrap input-dropdown-wrap">
+                <select name="state" id="state" class="form-txtbox form-label p-2" onchange="getDist(this.value)" required validate data-error-message="Please select state."></select>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">District<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>
+              <div class="item-input-wrap input-dropdown-wrap">
+                <select name="district" id="district" class="form-txtbox form-label p-2" onchange="getCity(this.value)" required validate data-error-message="Please select district."></select>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">City<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>
+              <div class="item-input-wrap input-dropdown-wrap">
+                <select name="city" id="city" class="form-txtbox form-label p-2" required validate data-error-message="Please select city."></select>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Primary Mobile Number<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>
+              <div class="item-input-wrap">
+                <input type="number" name="primary_mobile_number" id="primary_mobile_number" placeholder="Primary Mobile Number" class="form-txtbox p-2"  onkeyup="check_mobileno(this.value)" required validate data-error-message="primary mobile should not be empty.">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Secondary Mobile Number</div>
+              <div class="item-input-wrap">
+                <input type="number" name="secondary_mobile_number" placeholder="Secondary Mobile Number" class="form-txtbox p-2" >
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Date of Birth<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>
+              <div class="item-input-wrap">
+                <input type="text" name="dob" placeholder="Date of Birth" class="form-txtbox p-2" id="demo-calendar-modal" required validate data-error-message="Select Date Of Birth.">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Gender<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>
+              <div class="item-input-wrap">
+                <div class="row">
+                  <div class="col-50">
+                    <label class="radio form-label">
+                      <input type="radio" name="gender" value="Male" />
+                      <i class="icon-radio"></i>
+                    </label> Male 
+                    <span id="male_img" class="ml-10"></span>
+                  </div>
+                  <div class="col-50">
+                    <label class="radio form-label">
+                      <input type="radio" name="gender" value="Female" />
+                      <i class="icon-radio"></i>
+                    </label> Female
+                    <span id="female_img" class="ml-10"></span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Collar Type<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>
+              <div class="item-input-wrap">
+                <div class="row">
+                  <div class="col-50">
+                    <label class="radio form-label">
+                      <input type="radio" name="collar_type" onclick='getBlueCollarPositionsData("BLUE");setEmail("BLUE");getPos("BLUE");getBlueCollarDataNewDrop("BLUE")' value='BLUE'>
+                      <i class="icon-radio"></i>
+                    </label> BLUE 
+                  </div>
+                  <div class="col-50">
+                    <label class="radio form-label">
+                      <input type="radio" name="collar_type" onclick="getWhiteCollarPositionsData('WHITE');setEmail('WHITE');getPos('WHITE');getWhiteCollarDataNewDrop('WHITE');" value='WHITE'>
+                      <i class="icon-radio"></i>
+                    </label> WHITE 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Highest Qualification<sup class="redtxt fw-600 ml-1 font-12">*</sup></div>
+              <div class="item-input-wrap">
+                <input type="text" name="high_qualification" id="myInput" placeholder="Highest Qualification" class="form-txtbox p-2" required validate data-error-message="Select Qualification.">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" onclick="openDiv()"><i class="fa fa-chevron-down" ></i>
+                  </button>
+                </span>
+              </div>
+              <div class="nicescroll mdtest"></div>
+            </div>
+          </div>
+        </li>
+
+        <!--li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Position</div>
+              <div class="item-input-wrap input-dropdown-wrap">
+                <select name="position" id="userRequest_position" class="form-txtbox p-2"></select>      
+              </div>
+            </div>
+          </div>
+        </li-->
+
+        <li>         
+          <a href="#" class="item-link smart-select" data-searchbar="true" data-searchbar-placeholder="Search Position">
+            <select name="position[]" id="userRequest_position" class="form-txtbox p-2" multiple ></select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Position</div>
+              </div>
+            </div>
+          </a>
+        </li> 
+
+        <li>
+          <!--div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Job Function</div>
+              <div class="item-input-wrap input-dropdown-wrap">
+                <!--input type="text" name="job_function" placeholder="Job Function" class="form-txtbox p-2 pos_html"-->
+                <!--select name="job_function" id="job_function" class="form-txtbox pos_html p-2" onchange="three_jobfun(this.value)"></select>
+              </div>
+            </div>
+          </div-->          
+          <a href="#" class="item-link smart-select" data-searchbar="true" data-searchbar-placeholder="Search Job Function">        
+            <!--select name="job_function" id="job_function" class="form-txtbox pos_html p-2" onchange="three_jobfun(this.value)" multiple maxlength="3"></select-->
+            <select name="job_function[]" id="job_function" class="form-txtbox pos_html p-2" multiple maxlength="3"></select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Job Function</div>
+              </div>
+            </div>
+            <span class="font-10 ml-5 redtxt">Note: Please select any three Job Function of your choice interest.</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Experience</div>
+              <div class="item-input-wrap ">
+                <div class="row">
+                  <div class="col-66">
+                    <select name="exp_years" id="exp_years" class="form-txtbox form-label p-2"></select>
+                  </div>
+                  <div class="col-33">
+                    <select name="exp_month" id="exp_month" class="form-txtbox form-label p-2"></select>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Email</div>
+              <div class="item-input-wrap">
+                <input type="email" name="email" id="email" placeholder="Email" class="form-txtbox p-2" required validate data-error-message="Email should not be empty.">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Password</div>
+              <div class="item-input-wrap">
+                <input type="password" name="password" id="password" placeholder="Password" class="form-txtbox p-2" required validate data-error-message="Password should not be empty.">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label form-label">Confirm Password</div>
+              <div class="item-input-wrap">
+                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm password" class="form-txtbox p-2" required validate data-error-message="Confirm password should not be empty.">
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <div class="row">
+          <div id="success-badge" class="display-none ml-5 col-66"><span class="badge color-green match-text m-l-15" ></span></div>
+          <div id="warning-badge" class="display-none ml-5 col-66"><span class="badge color-red unmatch-text m-l-15" ></span></div>
+        </div>
+        
+        
+       
+
+      </ul>
+      <div class="block block-strong row">
+      <div class="col"><a class="button convert-form-to-data no-radius link-white form-btn create_btn disabled" href="#" onclick="candidate_register()">Create</a></div>
+      
+    </div>
+  </form>
+  </div>
+</div>

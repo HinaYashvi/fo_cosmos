@@ -1,0 +1,284 @@
+<div data-name="dashboard" class="page navbar-fixed toolbar-fixed">
+	<div class="navbar inner-header nav-bg">
+	  <div class="navbar-inner sliding">
+	    <div class="left ">
+        <a href="#" class="link panel-open" data-panel="left" onclick="openPanel()"><i class="f7-icons size-22 leftbars text-white" >bars</i></a>
+	    </div>
+	    <div class="title text-uppercase text-white">Dashboard For Operations</div>
+	    <div class="right">
+        <a class="link" href="#" >
+          <i class="f7-icons size-22 text-white leftbars" >more_vertical_fill</i>
+        </a>
+      </div>
+	  </div>
+	</div> 
+
+  <div class="toolbar toolbar-bottom footer-bg">
+    <div class="toolbar-inner">
+      <a class="link"></a>
+      <div class="link text-white text-capitalize ">powered by &nbsp; <span class="fa fa-star gly-spin "></span><a class="link external link-white text-uppercase linkspace poweredby" href="http://staroneweb.co.in" target="_system"> star one web</a></div>
+      <a class="link"></a> 
+    </div>
+  </div>
+
+  <div class="page-content"> 
+    <div class="block">
+      <div class="row">
+        <div class="col-50">
+        <div class="elevation-demo elevation-3 text-capitalize dashboard-listtitle">
+          <!--a class="dashboard-txt float-left m-20p" href="/provisional_registration/">provisional registration</a-->
+          <a class="dashboard-txt float-left m-20p" href="/pro_registrations/">provisional registration</a>
+        </div>
+        </div>
+        <div class="col-50">
+        <div class="elevation-demo elevation-3 text-capitalize dashboard-listtitle">
+          <a class="dashboard-txt float-left box-mrgn" href="/dpo_data/">DPO <br/>data</a>
+          <span class="badge color-orange dash-badge">5</span>
+        </div>
+
+        </div> 
+      </div>
+
+      <div class="row">
+        <div class="col-50">
+        <div class="elevation-demo elevation-3 text-capitalize dashboard-listtitle">
+          <a class="dashboard-txt float-left m-20p" href="//" onclick="logOut()">interview / placement</a>
+        </div>
+        </div>
+        <div class="col-50">
+        <div class="elevation-demo elevation-3 text-capitalize dashboard-listtitle">
+          <a class="dashboard-txt float-left m-20p" href="//">selelcted candidate</a>
+        </div>
+        </div>  
+      </div>
+
+      <div class="row">
+        <div class="col-50">
+        <div class="elevation-demo elevation-3 text-capitalize dashboard-listtitle">
+          <a class="dashboard-txt float-left m-20p" href="//">daily activity</a>
+        </div>
+        </div>
+        <div class="col-50">
+        <div class="elevation-demo elevation-3 text-capitalize dashboard-listtitle">
+          <a class="dashboard-txt float-left m-20p" href="//">training &amp; feedback</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-50">
+        <div class="elevation-demo elevation-3 text-capitalize dashboard-listtitle">
+          <a class="dashboard-txt float-left box-mrgn" href="/field_visit/">field <br/>visit</a>
+        </div>
+        </div>
+        <div class="col-50">
+        <div class="elevation-demo elevation-3 text-capitalize dashboard-listtitle">
+          <a class="dashboard-txt float-left out-mrgn" href="/feedback/">Feedback</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-50">
+        <div class="elevation-demo elevation-3 text-capitalize dashboard-listtitle">
+          <a class="dashboard-txt float-left out-mrgn" href="//">outstanding</a>
+        </div>
+        </div>
+        <div class="col-50">
+        <div class="elevation-demo elevation-3 text-capitalize dashboard-listtitle">
+          <a class="dashboard-txt float-left m-5p" href="/newbusiness_dev/">new business development &amp;<br/> competitor information</a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <!--div class="card data-table">
+      <table>        
+        <tbody>
+          <tr>            
+              <td class="text-capitalize dashboard-listtitle">
+                <a class="dashboard-txt " href="/provisional_registration/">provisional registration</a>
+              </td>
+              <td>
+                <a class="text-white" href="/provisional_registration/">
+                  <span class="badge color-orange text-center">0</span>
+                </a>
+              </td>
+            </a>
+          </tr>
+
+          <tr>
+            <td class="text-capitalize dashboard-listtitle">
+              <a class="dashboard-txt " href="/dpo_data/">DPO data</a>
+            </td>
+            <td>
+              <a class="dashboard-txt " href="//">
+                <span class="badge color-orange text-center">3</span>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-capitalize dashboard-listtitle">
+              <a class="dashboard-txt " href="//">interview placement</a>
+            </td>
+            <td>
+              <a class="dashboard-txt " href="//">
+                <span class="badge color-orange text-center">5</span>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-capitalize dashboard-listtitle">
+              <a class="dashboard-txt " href="//">selelcted candidate</a>
+            </td>
+            <td>
+              <a class="dashboard-txt " href="//">
+                <span class="badge color-orange text-center">0</span>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-capitalize dashboard-listtitle">
+              <a class="dashboard-txt " href="//">daily  activity</a>
+            </td>
+            <td>
+              <a class="dashboard-txt " href="//">
+                <span class="badge color-orange text-center">6</span>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-capitalize dashboard-listtitle">
+              <a class="dashboard-txt " href="//">training &amp; feedback</a>
+            </td>
+            <td>
+              <a class="dashboard-txt " href="//">
+                <span class="badge color-orange text-center">5</span>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-capitalize dashboard-listtitle">
+              <a class="dashboard-txt " href="//">field visit</a>
+            </td>
+            <td>
+              <a class="dashboard-txt " href="//">
+                <span class="badge color-orange text-center">6</span>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-capitalize dashboard-listtitle">
+              <a class="dashboard-txt " href="//">new business development &amp;<br/> competitor information
+              </a>
+            </td>
+            <td>
+              <a class="dashboard-txt " href="//">
+                <span class="badge color-orange text-center">1</span>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-capitalize dashboard-listtitle">
+              <a class="dashboard-txt " href="//">outstanding</a>
+            </td>
+            <td>
+              <a class="dashboard-txt " href="//">
+                <span class="badge color-orange text-center">10</span>
+              </a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div--> 
+
+    <!--div class="list">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title text-capitalize dashboard-listtitle"><a class="dashboard-txt " href="/provisional_registration/">provisional registration</a></div>
+              <div class="item-after"><span class="badge color-orange">0</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title text-capitalize dashboard-txt dashboard-listtitle">DPO data</div>
+              <div class="item-after"><span class="badge color-orange">3</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title text-capitalize dashboard-txt dashboard-listtitle">interview placement</div>
+              <div class="item-after"><span class="badge color-orange">5</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title text-capitalize dashboard-txt dashboard-listtitle">selelcted candidate</div>
+              <div class="item-after"><span class="badge color-orange">15</span></div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title text-capitalize dashboard-txt dashboard-listtitle">daily  activity</div>
+              <div class="item-after"><span class="badge color-orange">6</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title text-capitalize dashboard-txt dashboard-listtitle">training &amp; feedback</div>
+              <div class="item-after"><span class="badge color-orange">5</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title text-capitalize dashboard-txt dashboard-listtitle">field visit</div>
+              <div class="item-after"><span class="badge color-orange">2</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title text-capitalize dashboard-txt dashboard-listtitle">new business development &amp;<br/> competitor information</div>
+              <div class="item-after"><span class="badge color-orange">10</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title text-capitalize dashboard-txt dashboard-listtitle">outstanding</div>
+              <div class="item-after"><span class="badge color-orange">1</span></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+	</div--><!--list -->
+
+
+</div><!-- .page-content -->  
+
+</div>
