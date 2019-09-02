@@ -151,7 +151,7 @@ function openFM(){
   //fileChooser.open();
   fileChooser.open(function(uri) {
   alert(uri);
-});
+}); 
 }
 /*function openFM(){
   alert("called");
