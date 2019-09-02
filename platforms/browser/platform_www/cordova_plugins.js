@@ -500,30 +500,6 @@ module.exports = [
         "clobbers": [
             "fileChooser"
         ]
-    },
-    {
-        "file": "plugins/com.ourcodeworld.plugins.Filebrowser/www/filebrowser.js",
-        "id": "com.ourcodeworld.plugins.Filebrowser.Filebrowser",
-        "pluginId": "com.ourcodeworld.plugins.Filebrowser",
-        "clobbers": [
-            "window.OurCodeWorld.Filebrowser"
-        ]
-    },
-    {
-        "file": "plugins/cordova-filechooser/www/fileChooser.js",
-        "id": "cordova-filechooser.FileChooser",
-        "pluginId": "cordova-filechooser",
-        "clobbers": [
-            "fileChooser"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-file-opener2/www/plugins.FileOpener2.js",
-        "id": "cordova-plugin-file-opener2.FileOpener2",
-        "pluginId": "cordova-plugin-file-opener2",
-        "clobbers": [
-            "cordova.plugins.fileOpener2"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -548,10 +524,7 @@ module.exports.metadata =
     "de.appplant.cordova.plugin.local-notification": "0.8.5",
     "cordova-plugin-notification": "1.3.7",
     "cordova-plugin-file-transfer": "1.5.0",
-    "cordova-plugin-filechooser": "1.2.0",
-    "com.ourcodeworld.plugins.Filebrowser": "1.0.0",
-    "cordova-filechooser": "1.0.3",
-    "cordova-plugin-file-opener2": "2.2.1"
+    "cordova-plugin-filechooser": "1.2.0"
 }
 // BOTTOM OF METADATA
 });

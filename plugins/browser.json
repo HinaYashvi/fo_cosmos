@@ -51,15 +51,6 @@
     },
     "cordova-plugin-filechooser": {
       "PACKAGE_NAME": "com.phonegap.cosmosfo"
-    },
-    "com.ourcodeworld.plugins.Filebrowser": {
-      "PACKAGE_NAME": "com.phonegap.cosmosfo"
-    },
-    "cordova-filechooser": {
-      "PACKAGE_NAME": "com.phonegap.cosmosfo"
-    },
-    "cordova-plugin-file-opener2": {
-      "PACKAGE_NAME": "com.phonegap.cosmosfo"
     }
   },
   "dependent_plugins": {

@@ -52,17 +52,8 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="Filebrowser">
-        <param name="android-package" value="com.ourcodeworld.plugins.filebrowser.Filebrowser" />
-    </feature>
-    <feature name="FileOpener2">
-        <param name="android-package" value="io.github.pwlin.cordova.plugins.fileopener2.FileOpener2" />
-    </feature>
     <feature name="FileChooser">
         <param name="android-package" value="com.megster.cordova.FileChooser" />
-    </feature>
-    <feature name="FileChooser">
-        <param name="android-package" value="eu.droidit.filechooser.FileChooser" />
     </feature>
     <name>COSMOS-FO</name>
     <description>
